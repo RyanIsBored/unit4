@@ -7,6 +7,7 @@ def hw():
 
 
 def double(thingToDouble):
+    print(thingToDouble * 2)
 
 
 hw() #test of our function

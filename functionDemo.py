@@ -9,6 +9,20 @@ def hw():
 def double(thingToDouble):
     print(thingToDouble * 2)
 
+def bigger(a,b):
+    if a>b:
+        print(a)
+    else:
+        print(b)
 
-hw() #test of our function
-hw() #another test
+def slope(x1, y1, x2, y2):
+    print(y2 - y1)/(x2 - x1)
+
+
+
+
+#bigger(3,4)
+#bigger(4,3)
+#double(12)
+#double('w')
+#double(False)

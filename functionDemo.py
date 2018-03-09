@@ -4,3 +4,10 @@
 
 def hw():
     print("hello, world")
+
+
+def double(thingToDouble):
+
+
+hw() #test of our function
+hw() #another test

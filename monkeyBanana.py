@@ -3,6 +3,7 @@
 #Monkey Quest 2.0
 
 from ggame import *
+from random import randint
 
 #constants
 ROWS = 20
@@ -12,15 +13,22 @@ CELL_SIZE = 20
 
 def moveRight(event):
     monkey.x += CELL_SIZE
+    if monkey.x == banana.x and monkey.y == banana.y:
+        moveBanana()
     
 def moveLeft(event):
     monkey.x -= CELL_SIZE
+    
 
 def moveUp(event):
     monkey.y -= CELL_SIZE
 
 def moveDown(event):
     monkey.y += CELL_SIZE
+
+def moveBanana():
+    banana.x = randint(0,COLS-1)*CELL_SIZE
+    banana.y = randint(0,ROWS-1)*CELL_SIZE
 
 
 if __name__ == '__main__':

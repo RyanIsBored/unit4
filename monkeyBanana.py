@@ -53,7 +53,7 @@ def updateScore():
 
 def step():
     data['frames'] += 1
-    if data['frames'] == 250:
+    if data['frames'] == 300:
         moveBanana()
 
 

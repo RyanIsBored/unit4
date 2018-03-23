@@ -10,14 +10,14 @@ ROWS = 20
 COLS = 40
 CELL_SIZE = 20
 
-
+#move monkey right one cell if possible
 def moveRight(event):
     if monkey.x < (COLS-1)*CELL_SIZE:
         monkey.x += CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
             updateScore()
-    
+#move monkey left one cell if possible
 def moveLeft(event):
     if monkey.x > 0:
         monkey.x -= CELL_SIZE
@@ -25,14 +25,15 @@ def moveLeft(event):
             moveBanana()
             updateScore()
 
-
+#move monkey up one cell if possible
 def moveUp(event):
     if monkey.y > 0:
         monkey.y -= CELL_SIZE
         if monkey.x == banana.x and monkey.y == banana.y:
             moveBanana()
             updateScore()
-
+            
+#move monkey down one cell if possible
 def moveDown(event):
     if monkey.y < (ROWS-1)*CELL_SIZE:
         monkey.y += CELL_SIZE
@@ -40,17 +41,20 @@ def moveDown(event):
             moveBanana()
             updateScore()
 
+#move banana to a random location and reset timer
 def moveBanana():
     data['frames'] = 0
     banana.x = randint(0,COLS-1)*CELL_SIZE
     banana.y = randint(0,ROWS-1)*CELL_SIZE
 
+#increase score and displat new text at bottom of screen
 def updateScore():
     data['score'] += 10
     data['scoreText'].destroy() #remove old writing
     scoreBox = TextAsset('Score = '+str(data['score']))
     data['scoreText'] = Sprite(scoreBox,(0,ROWS*CELL_SIZE))
 
+#keep track of how many frames have happened and moves banana if it has been more than 300 frames since last move
 def step():
     data['frames'] += 1
     if data['frames'] == 300:

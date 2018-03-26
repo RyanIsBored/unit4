@@ -6,3 +6,7 @@ def prime(n):
         if n%i == 0:
             return False
         return True
+        
+
+print(prime(9))
+print(prime(11))

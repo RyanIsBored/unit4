@@ -18,4 +18,13 @@ excitedPrint('ok')
 def firstLetter(phrase):
     for ch in phrase:
         print(ch)
-    
+        
+firstLetter('wow')
+
+def repeats(a,b,c):
+    if a==b or a==c or b==c:
+        return True
+    else:
+        return False
+
+repeats(4,3,4)

@@ -14,4 +14,8 @@ def excitedPrint(string):
     
 
 excitedPrint('ok')
+
+def firstLetter(phrase):
+    for ch in phrase:
+        print(ch)
     

@@ -8,3 +8,10 @@ def count(num):
         print(i)
         i=i+1
 count(7)
+
+def excitedPrint(a):
+    a=string
+    print(string.upper(),'!!!')
+
+excitedPrint(ok)
+    

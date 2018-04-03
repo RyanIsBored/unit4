@@ -17,9 +17,10 @@ excitedPrint('ok')
 
 def firstLetter(phrase):
     for ch in phrase:
+        while ch
         print(ch)
         
-firstLetter('wow')
+print(firstLetter('wow'))
 
 def repeats(a, b, c):
     if a==b:

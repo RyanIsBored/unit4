@@ -4,7 +4,7 @@
 
 def count(num):
     i=1
-    while i<num:
+    while i<num+1:
         print(i)
         i=i+1
 count(7)

@@ -32,4 +32,4 @@ def repeats(a, b, c):
         return False
     
 
-repeats(1, 2, 3)
+print(repeats(3,2,3))

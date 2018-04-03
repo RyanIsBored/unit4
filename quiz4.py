@@ -31,4 +31,4 @@ def repeats(a,b,c):
     else:
         return False
 
-repeats(4,3,4)
+repeats(4,4,6)

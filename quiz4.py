@@ -21,7 +21,7 @@ def firstLetter(phrase):
         
 firstLetter('wow')
 
-def repeats(a,b,c):
+def repeats(a, b, c):
     if a==b:
         return True
     elif a==c:
@@ -30,5 +30,6 @@ def repeats(a,b,c):
         return True
     else:
         return False
+    
 
-repeats(4,4,6)
+repeats(1, 2, 3)

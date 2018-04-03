@@ -4,4 +4,6 @@
 
 def count(num):
     i=1
-    while
+    while i<num:
+        print(i)
+        i=i+1

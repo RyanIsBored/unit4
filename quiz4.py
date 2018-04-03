@@ -7,3 +7,4 @@ def count(num):
     while i<num:
         print(i)
         i=i+1
+count(7)

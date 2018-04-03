@@ -22,7 +22,11 @@ def firstLetter(phrase):
 firstLetter('wow')
 
 def repeats(a,b,c):
-    if a==b or a==c or b==c:
+    if a==b:
+        return True
+    elif a==c:
+        return True
+    elif b==c:
         return True
     else:
         return False

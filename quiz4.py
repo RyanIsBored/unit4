@@ -17,7 +17,6 @@ excitedPrint('ok')
 
 def firstLetter(phrase):
     for ch in phrase:
-        while ch
         print(ch)
         
 print(firstLetter('wow'))

@@ -9,9 +9,9 @@ def count(num):
         i=i+1
 count(7)
 
-def excitedPrint():
-    print(.upper(),'!!!')
+def excitedPrint(string):
+    print(string.upper(),'!!!')
     
 
-excitedPrint(ok)
+excitedPrint('ok')
     

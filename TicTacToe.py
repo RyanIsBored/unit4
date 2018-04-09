@@ -13,12 +13,12 @@ i=9
 
 def printBoard():
     print('        |     |     ')
-    print('        |     |     ')
+    print('  ',a,' |',b,'|',c,'')
     print('   -----------------')
     print('        |     |     ')
-    print('        |     |     ')
+    print('  ',d,' |',e,'|',f,'')
     print('   -----------------')
     print('        |     |     ')
-    print('        |     |     ')
+    print('  ',g,' |',h,'|',i,'')
 
 printBoard()

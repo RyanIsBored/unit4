@@ -24,7 +24,7 @@ def printBoard():
 if __name__ == '__main__':
     printBoard()
     choice = int(input("Choose a square: "))
-    if choice == 1:
+    if choice==1:
         a='x'
 
 printBoard()

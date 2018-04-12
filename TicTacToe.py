@@ -26,5 +26,7 @@ if __name__ == '__main__':
     choice = int(input("Choose a square: "))
     if choice==1:
         a='x'
+    if choice==2:
+        b='x'
 
 printBoard()

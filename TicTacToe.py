@@ -49,6 +49,9 @@ if __name__ == '__main__':
     printBoard()
     while True:    
         choice = int(input("Choose a square: "))
+        while isEmpty(choice)==False:
+            choice = int(input("Choose a different square: "))
+            
         if choice==1:
             a='x'
         if choice==2:

@@ -1,6 +1,8 @@
 #Ryan Jones
 #4/4/18
 
+from random import randint
+
 a=1
 b=2
 c=3
@@ -23,25 +25,25 @@ def printBoard():
 
 if __name__ == '__main__':
     printBoard()
-    choice = int(input("Choose a square: "))
-    if choice==1:
-        a='x'
-    if choice==2:
-        b='x'
-    if choice==3:
-        c='x'
-    if choice==4:
-        d='x'
-    if choice==5:
-        e='x'
-    if choice==6:
-        f='x'
-    if choice==7:
-        g='x'
-    if choice==8:
-        h='x'
-    if choice==9:
-        i='x'
+    while True:    
+        choice = int(input("Choose a square: "))
+        if choice==1:
+            a='x'
+        if choice==2:
+            b='x'
+        if choice==3:
+            c='x'
+        if choice==4:
+            d='x'
+        if choice==5:
+            e='x'
+        if choice==6:
+            f='x'
+        if choice==7:
+            g='x'
+        if choice==8:
+            h='x'
+        if choice==9:
+            i='x'
+        printBoard()
     
-
-printBoard()

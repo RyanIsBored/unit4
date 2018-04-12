@@ -13,8 +13,17 @@ g=7
 h=8
 i=9
 
+def fullBoard():
+    if (a=='x' or a=='o') and (b=='x' or b=='o') and (c=='x' or c=='o') and (d=='x' or d=='o') and (e=='x' or e=='o') and (f=='x' or f=='o') and (g=='x' or g=='o') and (h=='x' or h=='o') and (i=='x' or i=='o'):
+        return True
+    return False
+
 def Winner():
     if a=='x' and b=='x' and c=='x':
+        return True
+    if d=='x' and e=='x' and f=='x':
+        return True
+    if g=='x' and h=='x' and i=='x':
         return True
     return False
 
@@ -78,6 +87,9 @@ if __name__ == '__main__':
         printBoard()
         if Winner():
             print("You win!")
+            break
+        if fullBoard():
+            print('Tie')
             break
         
         choice2 = randint(1,9)

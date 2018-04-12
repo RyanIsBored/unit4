@@ -76,6 +76,10 @@ if __name__ == '__main__':
         if choice==9:
             i='x'
         printBoard()
+        if Winner():
+            print("You win!")
+            break
+        
         choice2 = randint(1,9)
         while isEmpty(choice2)==False:
             choice2 = randint(1,9)
@@ -99,4 +103,7 @@ if __name__ == '__main__':
         if choice2==9:
             i='o'
         printBoard()
+        if Winner():
+            print("You lose")
+            break
         

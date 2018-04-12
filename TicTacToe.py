@@ -25,6 +25,12 @@ def Winner():
         return True
     if g=='x' and h=='x' and i=='x':
         return True
+    if a=='o' and b=='o' and c=='o':
+        return True
+    if d=='o' and e=='o' and f=='o':
+        return True
+    if g=='o' and h=='o' and i=='o':
+        return True
     return False
 
 def isEmpty(square):

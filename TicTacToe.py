@@ -72,6 +72,9 @@ if __name__ == '__main__':
             i='x'
         printBoard()
         choice2 = randint(1,9)
+        while isEmpty(choice2)==False:
+            choice2 = randint(1,9)
+            
         if choice2==1:
             a='o'
         if choice2==2:

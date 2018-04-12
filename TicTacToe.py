@@ -13,6 +13,11 @@ g=7
 h=8
 i=9
 
+def Winner():
+    if a=='x' and b=='x' and c=='x':
+        return True
+    return False
+
 def isEmpty(square):
     if square==1 and a==1:
         return True

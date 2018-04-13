@@ -13,12 +13,12 @@ g=7
 h=8
 i=9
 
-def fullBoard():
+def fullBoard(): #When the game ends in a tie
     if (a=='x' or a=='o') and (b=='x' or b=='o') and (c=='x' or c=='o') and (d=='x' or d=='o') and (e=='x' or e=='o') and (f=='x' or f=='o') and (g=='x' or g=='o') and (h=='x' or h=='o') and (i=='x' or i=='o'):
         return True
     return False
 
-def Winner():
+def Winner(): #When either you or your opponent get 3 in a row vertically, horizontally, or diagonally
     if a=='x' and b=='x' and c=='x':
         return True
     if d=='x' and e=='x' and f=='x':
@@ -53,7 +53,7 @@ def Winner():
         return True
     return False
 
-def isEmpty(square):
+def isEmpty(square): #checks to make sure a square isn't already occupied
     if square==1 and a==1:
         return True
     if square==2 and b==2:
@@ -75,7 +75,7 @@ def isEmpty(square):
     return False
         
         
-def printBoard():
+def printBoard(): #The board
     print('      |   |     ')
     print('  ',a,' |',b,'|',c,'')
     print('   -----------')

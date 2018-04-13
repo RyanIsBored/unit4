@@ -25,11 +25,31 @@ def Winner():
         return True
     if g=='x' and h=='x' and i=='x':
         return True
+    if a=='x' and d=='x' and g=='x':
+        return True
+    if b=='x' and e=='x' and h=='x':
+        return True
+    if c=='x' and f=='x' and i=='x':
+        return True
+    if a=='x' and e=='x' and i=='x':
+        return True
+    if c=='x' and e=='x' and g=='x':
+        return True
     if a=='o' and b=='o' and c=='o':
         return True
     if d=='o' and e=='o' and f=='o':
         return True
     if g=='o' and h=='o' and i=='o':
+        return True
+    if a=='o' and d=='o' and g=='o':
+        return True
+    if b=='o' and e=='o' and h=='o':
+        return True
+    if c=='o' and f=='o' and i=='o':
+        return True
+    if a=='o' and e=='o' and i=='o':
+        return True
+    if c=='o' and e=='o' and g=='o':
         return True
     return False
 
